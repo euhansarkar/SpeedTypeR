@@ -17,34 +17,35 @@ body {
 }
 
 #question {
-  height: 100px;
+  height: 6.25rem;
   display: flex;
+  padding: 0.938rem;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 25px;
-  border-radius: 15px;
+  font-size: 1.563rem;
+  border-radius: 0.938rem;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     92.49deg,
     rgba(255, 255, 255, 0.1) 0.18%,
     rgba(255, 255, 255, 0.05) 99.85%
   );
-  backdrop-filter: blur(5px);
-  margin-bottom: 30px;
+  backdrop-filter: blur(0.313rem);
+  margin-bottom: 1.875rem;
 }
 
 #display {
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding-left: 5rem;
   color: white;
-  font-size: 32px;
+  font-size: 2rem;
   background-color: #171717;
-  border: 2px solid #9dffad;
-  border-radius: 15px;
+  border: 0.125rem solid #9dffad;
+  border-radius: 0.938rem;
 }
 
 #countdown {
@@ -66,11 +67,11 @@ body {
   top: 50%; 
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 250px;
-  width: 400px;
+  height: 15.625rem;
+  width: 25rem;
   background-color: #171717;
-  border-radius: 15px;
-  border: 2px solid #9dffad;
+  border-radius: 0.938rem;
+  border: 0.125rem solid #9dffad;
   color: white;
   text-align: center;
   padding: 2rem;
@@ -78,7 +79,7 @@ body {
 #show-time{
   text-align: center;
   color: white;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 .green {
@@ -91,7 +92,7 @@ body {
   font-weight: 700;
 }
 .inactive {
-  border: 2px solid white !important;
+  border: 0.125rem solid white !important;
 }
 .hidden {
   display: none;
@@ -99,20 +100,20 @@ body {
 .title {
   text-align: center;
   color: white;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .divider-container {
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 0.938rem;
   margin: 0 auto;
 }
 
 .line {
-  height: 2px;
+  height: 0.125rem;
   background: white;
   width: 100%;
 }
@@ -125,19 +126,19 @@ body {
 .buttons {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
 button {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
-  width: 300px;
-  height: 50px;
+  width: 18.75rem;
+  height: 3.125rem;
   color: white;
   background-color: #171717;
-  border-radius: 10px;
-  border: 2px solid #9dffad;
+  border-radius: 0.625rem;
+  border: 0.125rem solid #9dffad;
   cursor: pointer;
 }
 
@@ -150,22 +151,22 @@ button {
 .card {
   width: 30%;
   height: 30%;
-  padding: 50px;
+  padding: 3.125rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   color: white;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     92.49deg,
     rgba(255, 255, 255, 0.1) 0.18%,
     rgba(255, 255, 255, 0.05) 99.85%
   );
-  backdrop-filter: blur(5px);
-  margin-bottom: 30px;
+  backdrop-filter: blur(0.313rem);
+  margin-bottom: 1.875rem;
 }
 
 #modal-background {
@@ -175,16 +176,16 @@ button {
     rgba(255, 255, 255, 0.1) 0.18%,
     rgba(255, 255, 255, 0.05) 99.85%
   );
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(00.313rem);
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75rem) {
   .box-container {
-    padding: 0 20px;
+    padding: 0 1.25rem;
     width: 100%;
   }
   .card {
