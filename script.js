@@ -45,6 +45,7 @@ const typeController = (e) => {
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
+    errorCount++;
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
   }
 
@@ -80,7 +81,7 @@ const gameOver = () => {
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
+    <p>You took: <span class="bold">${parseInt(timeTaken)}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
@@ -116,7 +117,7 @@ const start = () => {
       startBtn.addEventListener("keydown", typeController);
       display.classList.remove("inactive");
       
-      startTime = new Date().getTime();
+      startTime = (new Date().getTime()).toFixed(2);
       clearInterval(startCountdown);
     }
     count--;
@@ -135,5 +136,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${parseInt(startTime) ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);
