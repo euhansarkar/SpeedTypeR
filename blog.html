@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>blog reader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-position: left top;
+  font-family: "Zilla Slab", serif;
+}
+  </style>
+  <body>
+
+    <header class="container">
+        <nav class="navbar navbar-expand-lg" style="background-color: #1f2120;">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-light>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link active text-capitalize text-light fs-5" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link text-light fs-5 text-capitalize" href="#">tab</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link text-light fs-5 text-capitalize" href="#">tab</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link text-light fs-5 text-capitalize" href="#">tab</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link text-light fs-5 text-capitalize" href="#">tab</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="container mt-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What is the difference between <code class="mx-2 mt-2">localStorage</code> and <code class="mx-2 mt-2">sessionStorage</code> ?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body fs-5">
+                      We know <code>localStorage</code> and <code>sessionStorage</code> storage are basically using to store user data in user's web browser. When user will be interective with any website the browser stores some data in the specific webpages localStorage and sessionStorage. sessionStorage stores data temporary like when user close the tab all data will be removed. But localStorage data never been removed. If user wants to write the data user can do it. 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What is the difference Global scope and Block scope?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body fs-5">
+                      <div>
+                        <code class="fs-4">Global Scope:</code> A variable declared outside a function or a block becomes Global.
+                      </div>
+                      <div>
+                        <code class="fs-4">Block Scope</code> A Variable declared inside a block (carley braces) becomes block scope.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Explain about Event-Loop! What is it?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body fs-5">
+                      Event-Loop is A machanism that takes tasks from call back queue and give the task to call stack. that call stack inside the JS engine.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How many times you will get <code class="mx-2 mt-2">undefined</code> in JavaScript?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body fs-5">
+                        There are 8 ways we can get <code>undefined</code> in JavaScript. 
+                        <div>1. variable with no assignment.</div>
+                        <div>2. function declaration without return.</div>
+                        <div>3. when declared paramenters but not send arguments.</div>
+                        <div>4. if don't set any value after return keyword.</div>
+                        <div>5. calling that object property that is not defined in the object.</div>
+                        <div>6. if delete any array element by <code>delete</code> keyword. we will get undefined hole inside the array.</div>
+                        <div>7. directly setting undefined value in a variable.</div>
+                        <div>7. calling an array element that dosen't exist.</div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
