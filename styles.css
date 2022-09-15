@@ -149,8 +149,8 @@ button {
 }
 
 .card {
-  width: 30%;
-  height: 30%;
+  width: 288px;
+  height: 190px;
   padding: 3.125rem;
   display: flex;
   flex-direction: column;
